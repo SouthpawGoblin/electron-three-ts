@@ -1,13 +1,14 @@
 import './renderer.sass'
 import * as THREE from 'three'
 
-const scene = new THREE.Scene()
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+const rootDom = document.getElementById('app') as HTMLElement
 
-const root = document.getElementById('app') as HTMLElement
+const scene = new THREE.Scene()
+const camera = new THREE.PerspectiveCamera(75, rootDom.clientWidth / rootDom.clientHeight, 0.1, 1000)
+
 const renderer = new THREE.WebGLRenderer()
-renderer.setSize(root.clientWidth, root.clientHeight)
-root.appendChild(renderer.domElement)
+renderer.setSize(rootDom.clientWidth, rootDom.clientHeight)
+rootDom.appendChild(renderer.domElement)
 
 const geometry = new THREE.BoxGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
