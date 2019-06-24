@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "electron": "^5.0.5",
+    "electron-builder": "^20.44.4",
     "electron-webpack": "^2.7.2",
     "electron-webpack-ts": "^3.2.0",
     "node-sass": "^4.12.0",
