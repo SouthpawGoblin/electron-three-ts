@@ -31,6 +31,6 @@
   },
   "dependencies": {
     "source-map-support": "^0.5.12",
-    "three": "^0.105.2"
+    "three": "^0.125.0"
   }
 }
